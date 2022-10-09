@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class CreateLead {
+public class LeafTapsApp {
 
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
@@ -22,7 +22,7 @@ public class CreateLead {
 		driver.findElement(By.id("createLeadForm_firstName")).sendKeys("geetha");
 		driver.findElement(By.id("createLeadForm_lastName")).sendKeys("rajendran");
 		driver.findElement(By.id("createLeadForm_firstNameLocal")).sendKeys("r");
-		driver.findElement(By.id("createLeadForm_departmentName")).sendKeys("Health Care");
+		driver.findElement(By.id("createLeadForm_industryEnumId")).sendKeys("Health Care");
 		driver.findElement(By.id("createLeadForm_description")).sendKeys("to enhance quality of life by enhancing health");
 		driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("rmbg.rg@gmail.com");
 		driver.findElement(By.name("submitButton")).sendKeys("Create Lead");

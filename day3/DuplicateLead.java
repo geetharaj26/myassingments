@@ -22,7 +22,7 @@ public class DuplicateLead {
 		driver.findElement(By.id("createLeadForm_firstName")).sendKeys("geetha");
 		driver.findElement(By.id("createLeadForm_lastName")).sendKeys("rajendran");
 		driver.findElement(By.id("createLeadForm_firstNameLocal")).sendKeys("r");
-		driver.findElement(By.id("createLeadForm_industryEnumId")).sendKeys("Health Care");
+		driver.findElement(By.id("createLeadForm_departmentName")).sendKeys("Health Care");
 		driver.findElement(By.id("createLeadForm_description")).sendKeys("to enhance quality of life by enhancing health");
 		driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("rmbg.rg@gmail.com");
 		driver.findElement(By.name("submitButton")).sendKeys("Create Lead");
@@ -31,11 +31,6 @@ public class DuplicateLead {
 		driver.findElement(By.linkText("Duplicate Lead")).click();
 		driver.findElement(By.id("createLeadForm_companyName")).clear();
 		driver.findElement(By.id("createLeadForm_companyName")).sendKeys("trigon");
-		driver.findElement(By.id("createLeadForm_firstName")).clear();
-		driver.findElement(By.id("createLeadForm_firstName")).sendKeys("shajeth");
-		driver.findElement(By.name("submitButton")).sendKeys("Create Lead");
-		String title1=driver.getTitle();
-		System.out.println("the tittle is " +driver.getTitle());
 		
 
 

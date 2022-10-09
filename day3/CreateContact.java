@@ -21,8 +21,8 @@ public class CreateContact {
 		driver.findElement(By.id("firstNameField")).sendKeys("geetha");
 	    driver.findElement(By.id("lastNameField")).sendKeys("rajendran");
 	    driver.findElement(By.name("submitButton")).sendKeys("Create Contact");
-	    String name=driver.findElement(By.id("viewContact_firstName_sp")).getText();
-	    System.out.println("the first name is " +driver.findElement(By.id("viewContact_firstName_sp")).getText());
+	    String name=driver.findElement(By.id("firstNameField")).getText();
+	    System.out.println("the first name is " +name);
 			String title=driver.getTitle();
 		System.out.println("the tittle is " +driver.getTitle());
 		driver.close();
